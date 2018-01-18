@@ -35,7 +35,7 @@ if __name__ == "__main__":
     
     parser = argparse.ArgumentParser()
     
-    choices = ["info", "update"]
+    choices = ['info', "update"]
     parser.add_argument("command", choices=choices, help="metos3d ")
     parser.add_argument("-v", "--verbose", action="store_true", help="enable output")
     
