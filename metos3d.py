@@ -47,8 +47,8 @@ if __name__ == "__main__":
 #                        help='sum the integers (default: find the max)')
 
     args = parser.parse_args()
-    print(args)
-    print(args.command)
+#    print(args)
+#    print(args.command)
 #    print(args.accumulate(args.integers))
 
     # dispatch
