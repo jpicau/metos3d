@@ -1,9 +1,55 @@
-# metos3d
+# Metos3D
+
  Marine Ecosystem Toolkit for Optimization and Simulation in 3-D
 
-## quick start
+## About
 
+Metos3D is a software package ...
 
+## Quick start
+
+- What I need: curl, git
+- What I get: python, metos3d, fun
+
+### Install conda
+
+More about: Anaconda, Miniconda and Conda
+
+Miniconda installer page: https://conda.io/miniconda.html
+
+[miniconda](https://conda.io/miniconda.html)
+
+https://conda.io/miniconda.html
+
+Download script and run script:
+
+- **Linux:**
+
+```
+curl -O ... # download script
+bash ...    # run script
+```
+
+- **Mac:**
+
+```
+curl -O ... # download script
+bash ...    # run script
+```
+
+- **Windows:**
+
+```
+???
+```
+
+### install metos3d
+
+```
+conda install -c jpicau metos3d
+```
+
+### first run
 
 ```
 $>
@@ -20,7 +66,7 @@ tree N
 
 addition documentation
 
-- cheat sheet
-- tutorial
-- reference
+- [cheat sheet](doc/metos3d-cheat-sheet.md)
+- [tutorial](doc/metos3d-tutorial.md)
+- [reference](doc/metos3d-reference.md)
 

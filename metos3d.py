@@ -52,7 +52,7 @@ if __name__ == "__main__":
 #    print(args.accumulate(args.integers))
 
     # dispatch
-    m3d.dispatch_command(args)
+#    m3d.dispatch_command(args)
 
 
 
