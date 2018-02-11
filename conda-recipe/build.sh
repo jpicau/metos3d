@@ -6,4 +6,4 @@ echo ${PREFIX}
 
 echo `pwd`
 
-cp ../metos3d ${PREFIX}/bin/.
+cp metos3d ${PREFIX}/bin/.
