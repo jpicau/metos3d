@@ -9,13 +9,15 @@ source:
 build:
     number: 0
 
-#requirements:
-#    build:
+requirements:
+    build:
+        - python
 #        - x264 # [unix]
 #        - openssl
 #        - yasm # [unix]
 #        - mingw # [win]
-#    run:
+    run:
+        - python
 #        - x264 # [unix]
 #        - openssl
 
