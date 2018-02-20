@@ -29,7 +29,7 @@ setup(name          = "metos3d",
       entry_points  = {
         "console_scripts": ["metos3d=metos3d.cli:metos3d"],
       },
-      install_requires=["click", "yaml"],
+      install_requires=["click"],
       zip_safe      = False)
 
 

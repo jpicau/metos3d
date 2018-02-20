@@ -56,11 +56,20 @@ def metos3d(ctx, verbose):
 def info(ctx):
     '''
         Show Metos3D configuration.
+        
+        \b
+        petsc, PETSc installation, version, list, active, default: 3.7.7
+            compilers,
+        data, input file path, list, active, default: data/
+        model, bgc file path, list, active, default: model/
+
+        Metos3D stores its configuration ?user-wide.
+
         '''
 #        \b
 #        Metos3D stores configuration information in ...
 #        ``.~/metos3drc``
-#        It is a YAML file located the users home directory.
+#        It is a YAML file located in the users home directory.
 #        '''
 #
 #    filepath = os.path.expanduser("~/.metos3drc")

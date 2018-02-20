@@ -76,7 +76,11 @@ addition documentation
 some advices, good pratices that we try tp follow,
 - branching model, http://nvie.com/posts/a-successful-git-branching-model/
 - semantic versioning, https://semver.org/
--
+
+what to do to create a new version?
+- assuming, the last commit is done
+-- 
+
 
 
 
