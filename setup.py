@@ -1,6 +1,6 @@
 #
 # Metos3D: A Marine Ecosystem Toolkit for Optimization and Simulation in 3-D
-# Copyright (C) 2018  Jaroslaw Piwonski, CAU, jpi@informatik.uni-kiel.de
+# Copyright (C) 2017  Jaroslaw Piwonski, CAU, jpi@informatik.uni-kiel.de
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -15,5 +15,21 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
+
+from setuptools import setup
+
+setup(name          = "metos3d",
+      version       = "0.0.1",
+      description   = "A Marine Ecosystem Toolkit for Optimization and Simulation in 3-D",
+      url           = "https://metos3d.github.io/",
+      author        = "Jaroslaw Piwonski (CAU)",
+      author_email  = "jpi@informatik.uni-kiel.de",
+      license       = "GPL 3.0",
+      packages      = ["metos3d"],
+      entry_points  = {
+        "console_scripts": ["metos3d=metos3d.cli:metos3d"],
+      },
+      install_requires=["click", "yaml"],
+      zip_safe      = False)
 
 

@@ -70,3 +70,15 @@ addition documentation
 - [tutorial](doc/metos3d-tutorial.md)
 - [reference](doc/metos3d-reference.md)
 
+
+## misc
+
+some advices, good pratices that we try tp follow,
+- branching model, http://nvie.com/posts/a-successful-git-branching-model/
+- semantic versioning, https://semver.org/
+-
+
+
+
+
+
