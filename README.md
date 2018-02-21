@@ -64,6 +64,8 @@ tree N
 
 ## doc
 
+[Metos3D docs](https://jpicau.github.io/metos3d/)
+
 addition documentation
 
 - [cheat sheet](doc/metos3d-cheat-sheet.md)
