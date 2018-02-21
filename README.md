@@ -66,13 +66,6 @@ tree N
 
 [Metos3D docs](https://jpicau.github.io/metos3d/)
 
-addition documentation
-
-- [cheat sheet](doc/metos3d-cheat-sheet.md)
-- [tutorial](doc/metos3d-tutorial.md)
-- [reference](doc/metos3d-reference.md)
-
-
 ## misc
 
 some advices, good pratices that we try to follow,
