@@ -86,35 +86,35 @@ def info(ctx):
 #    print(ctx.obj)
     pass
 
-## petsc
-#@metos3d.command()
-#@click.pass_context
-#def petsc(ctx):
-#    '''
-#        Show PETSc configuration.
-#        '''
-#    print(ctx.obj)
-#    pass
-#
-## data
-#@metos3d.command()
-#@click.pass_context
-#def data(ctx):
-#    '''
-#        Show data configuration.
-#        '''
-#    print(ctx.obj)
-#    pass
-#
-## model
-#@metos3d.command()
-#@click.pass_context
-#def model(ctx):
-#    '''
-#        Show model configuration.
-#        '''
-#    print(ctx.obj)
-#    pass
+# petsc
+@metos3d.command()
+@click.pass_context
+def petsc(ctx):
+    '''
+        Show PETSc configuration.
+        '''
+    print(ctx.obj)
+    pass
+
+# data
+@metos3d.command()
+@click.pass_context
+def data(ctx):
+    '''
+        Show data configuration.
+        '''
+    print(ctx.obj)
+    pass
+
+# model
+@metos3d.command()
+@click.pass_context
+def model(ctx):
+    '''
+        Show model configuration.
+        '''
+    print(ctx.obj)
+    pass
 
 
 
