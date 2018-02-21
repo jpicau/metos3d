@@ -68,7 +68,7 @@ tree N
 
 or
 
-[https://metos3d.readthedocs.io/en/latest/]()
+https://metos3d.readthedocs.io/en/latest/
 
 ## misc
 
