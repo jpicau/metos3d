@@ -66,6 +66,10 @@ tree N
 
 [Metos3D docs](https://jpicau.github.io/metos3d/)
 
+or
+
+[https://metos3d.readthedocs.io/en/latest/]()
+
 ## misc
 
 some advices, good pratices that we try to follow,
