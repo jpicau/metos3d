@@ -10,10 +10,10 @@ Welcome to Metos3D's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-    metos3d-cheat-sheet
-    metos3d-reference
-    metos3d-tutorial
-
+   README
+   metos3d-cheat-sheet
+   metos3d-reference
+   metos3d-tutorial
 
 Indices and tables
 ==================
