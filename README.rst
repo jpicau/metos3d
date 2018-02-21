@@ -73,13 +73,28 @@ addition documentation
 
 ## misc
 
-some advices, good pratices that we try tp follow,
+some advices, good pratices that we try to follow,
 - branching model, http://nvie.com/posts/a-successful-git-branching-model/
 - semantic versioning, https://semver.org/
 
 what to do to create a new version?
-- assuming, the last commit is done
--- 
+- assuming, the last commit is done, (repository pushed)
+
+```
+git tag -a ... -m ...
+git push --follow-tags
+
+edit: cli.py
+    @click.version_option("0.0.1")
+edit: setup.py
+    version       = "0.0.1",
+
+python setup.py sdist
+twine upload dist/metos3d-...-0.0.1...
+
+```
+
+
 
 
 
