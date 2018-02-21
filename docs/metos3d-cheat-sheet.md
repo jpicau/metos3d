@@ -1,6 +1,5 @@
 # metos3d cheat sheet
 
-blubi blubb
 
 `metos3d info`
 `~/.metos3drc`
