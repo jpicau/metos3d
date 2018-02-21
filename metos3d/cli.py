@@ -25,9 +25,9 @@ class Metos3D():
     pass
 
 # metos3d
-@click.group()
+@click.group(context_settings={"help_option_names": ["-h", "--help"]})
 @click.option("-v", "--verbose", is_flag=True, help="Show invoked shell commands and their output.")
-@click.version_option("0.0.1")
+@click.version_option("0.0.1", "-V", "--version")
 @click.pass_context
 def metos3d(ctx, verbose):
     '''
