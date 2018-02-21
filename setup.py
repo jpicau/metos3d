@@ -19,7 +19,7 @@
 from setuptools import setup
 
 setup(name          = "metos3d",
-      version       = "0.0.1-2",
+      version       = "0.0.1-3",
       description   = "A Marine Ecosystem Toolkit for Optimization and Simulation in 3-D",
       url           = "https://metos3d.github.io/",
       author        = "Jaroslaw Piwonski (CAU)",
@@ -29,7 +29,7 @@ setup(name          = "metos3d",
       entry_points  = {
         "console_scripts": ["metos3d=metos3d.cli:metos3d"],
       },
-      install_requires=["click"],
+      install_requires=["click", "pyyaml"],
       zip_safe      = False)
 
 
