@@ -16,15 +16,17 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
+import metos3d
+
 from setuptools import setup
 
-setup(name          = "metos3d",
-      version       = "0.0.1-3",
-      description   = "A Marine Ecosystem Toolkit for Optimization and Simulation in 3-D",
-      url           = "https://metos3d.github.io/",
-      author        = "Jaroslaw Piwonski (CAU)",
-      author_email  = "jpi@informatik.uni-kiel.de",
-      license       = "GPL 3.0",
+setup(name          = __title__,
+      version       = __version__,
+      description   = __summary__,
+      url           = __uri__,
+      author        = __author__,
+      author_email  = __email__,
+      license       = __license__,
       packages      = ["metos3d"],
       entry_points  = {
         "console_scripts": ["metos3d=metos3d.cli:metos3d"],

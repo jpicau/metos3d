@@ -16,20 +16,21 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-#__all__ = (
-#           "__title__", "__summary__", "__uri__", "__version__", "__author__",
-#           "__email__", "__license__", "__copyright__",
-#           )
-#
-#__title__ = "twine"
-#__summary__ = "Collection of utilities for interacting with PyPI"
-#__uri__ = "https://github.com/pypa/twine"
-#
-#__version__ = "1.9.1"
-#
-#__author__ = "Donald Stufft and individual contributors"
-#__email__ = "donald@stufft.io"
-#
-#__license__ = "Apache License, Version 2.0"
-#__copyright__ = "Copyright 2013 Donald Stufft"
+__all__ = (
+           "__title__", "__summary__", "__uri__", "__version__", "__author__",
+           "__email__", "__license__", "__copyright__",
+           )
+
+__title__       = "metos3d"
+__summary__     = "Marine Ecosystem Toolkit for Optimization and Simulation in 3-D"
+__uri__         = "https://github.com/metos3d"
+
+__version__     = "0.0.1-8"
+
+__author__      = "Jaroslaw Piwonski (CAU)"
+__email__       = "jpi@informatik.uni-kiel.de"
+
+__license__     = "GPL-3.0"
+__copyright__   = "Copyright 2018 Jaroslaw Piwonski"
+
 

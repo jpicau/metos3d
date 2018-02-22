@@ -20,6 +20,8 @@ import os
 import click
 import yaml
 
+import metos3d
+
 # metos3d context object
 class Metos3D():
     pass
@@ -27,7 +29,7 @@ class Metos3D():
 # metos3d
 @click.group(context_settings={"help_option_names": ["-h", "--help"]})
 @click.option("-v", "--verbose", is_flag=True, help="Show invoked shell commands and their output.")
-@click.version_option("0.0.1", "-V", "--version")
+@click.version_option(__version__, "-V", "--version")
 @click.pass_context
 def metos3d(ctx, verbose):
     '''
@@ -86,35 +88,35 @@ def info(ctx):
 #    print(ctx.obj)
     pass
 
-# petsc
-@metos3d.command()
-@click.pass_context
-def petsc(ctx):
-    '''
-        Show PETSc configuration.
-        '''
-    print(ctx.obj)
-    pass
-
-# data
-@metos3d.command()
-@click.pass_context
-def data(ctx):
-    '''
-        Show data configuration.
-        '''
-    print(ctx.obj)
-    pass
-
-# model
-@metos3d.command()
-@click.pass_context
-def model(ctx):
-    '''
-        Show model configuration.
-        '''
-    print(ctx.obj)
-    pass
+## petsc
+#@metos3d.command()
+#@click.pass_context
+#def petsc(ctx):
+#    '''
+#        Show PETSc configuration.
+#        '''
+#    print(ctx.obj)
+#    pass
+#
+## data
+#@metos3d.command()
+#@click.pass_context
+#def data(ctx):
+#    '''
+#        Show data configuration.
+#        '''
+#    print(ctx.obj)
+#    pass
+#
+## model
+#@metos3d.command()
+#@click.pass_context
+#def model(ctx):
+#    '''
+#        Show model configuration.
+#        '''
+#    print(ctx.obj)
+#    pass
 
 
 
