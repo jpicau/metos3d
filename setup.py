@@ -20,13 +20,13 @@ import metos3d
 
 from setuptools import setup
 
-setup(name          = __title__,
-      version       = __version__,
-      description   = __summary__,
-      url           = __uri__,
-      author        = __author__,
-      author_email  = __email__,
-      license       = __license__,
+setup(name          = metos3d.__title__,
+      version       = metos3d.__version__,
+      description   = metos3d.__summary__,
+      url           = metos3d.__uri__,
+      author        = metos3d.__author__,
+      author_email  = metos3d.__email__,
+      license       = metos3d.__license__,
       packages      = ["metos3d"],
       entry_points  = {
         "console_scripts": ["metos3d=metos3d.cli:metos3d"],
