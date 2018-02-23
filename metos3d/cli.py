@@ -33,20 +33,21 @@ class Metos3D():
 @click.pass_context
 def metos3d(ctx, verbose):
     '''
-        Metos3D: A Marine Ecosystem Toolkit for Optimization and Simulation in 3-D
+    Metos3D: A Marine Ecosystem Toolkit for Optimization and Simulation in 3-D
+    
+    \b
+    Sources:
+        https://github.com/metos3d
         
-        \b
-        Sources:
-            https://github.com/metos3d
-            
-        Documentation:
-            https://metos3d.github.io
-        
-        \b
-        Scientific article:
-            [Piwonski and Slawig, 2016]
-            https://www.geosci-model-dev.net/9/3729/2016
-        '''
+    Documentation:
+        https://metos3d.github.io
+    
+    \b
+    Scientific article:
+        [Piwonski and Slawig, 2016]
+        https://www.geosci-model-dev.net/9/3729/2016
+    
+    '''
 
     ctx.obj = Metos3D()
     ctx.obj.verbose = verbose
@@ -57,17 +58,33 @@ def metos3d(ctx, verbose):
 @click.pass_context
 def info(ctx):
     '''
-        Show Metos3D configuration.
+    Show Metos3D configuration.
+    
+    \b
+    petsc, PETSc installation, version, list, active, default: 3.7.7
+    compilers,
+    data, input file path, list, active, default: data/
+    model, bgc file path, list, active, default: model/
+    
+    .. code:: bash
+    
+        $>
+        metos3d info
         
-        \b
-        petsc, PETSc installation, version, list, active, default: 3.7.7
-            compilers,
-        data, input file path, list, active, default: data/
-        model, bgc file path, list, active, default: model/
+    .. code:: python
+    
+        for i in range(10):
+            print(i)
+            
+    .. code:: octave
+    
+        a = zeros(10);
+        a(:) = 1.0;
 
-        Metos3D stores its configuration ?user-wide.
+    Metos3D stores its configuration ?user-wide.
 
-        '''
+    '''
+    
 #        \b
 #        Metos3D stores configuration information in ...
 #        ``.~/metos3drc``
