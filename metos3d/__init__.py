@@ -25,7 +25,7 @@ __title__       = "metos3d"
 __summary__     = "Marine Ecosystem Toolkit for Optimization and Simulation in 3-D"
 __uri__         = "https://github.com/metos3d"
 
-__version__     = "0.0.1.dev9"
+__version__     = "0.0.2"
 
 __author__      = "Jaroslaw Piwonski (CAU)"
 __email__       = "jpi@informatik.uni-kiel.de"

@@ -22,11 +22,11 @@ import yaml
 
 import metos3d
 
-# metos3d context object
-class Metos3D():
+# context
+class Context():
     pass
 
-# metos3d
+# metos3d command group
 @click.group(context_settings={"help_option_names": ["-h", "--help"]})
 @click.option("-v", "--verbose", is_flag=True, help="Show invoked shell commands and their output.")
 @click.version_option(metos3d.__version__, "-V", "--version")
@@ -48,43 +48,67 @@ def metos3d(ctx, verbose):
         https://www.geosci-model-dev.net/9/3729/2016
     
     '''
-
-    ctx.obj = Metos3D()
+    
+    ctx.obj = Context()
     ctx.obj.verbose = verbose
-#    print(ctx.obj)
+    print("# metos3d:", ctx.obj)
 
-# info
+# info command
 @metos3d.command()
 @click.pass_context
 def info(ctx):
     '''
     Show Metos3D configuration.
-    
-    \b
-    petsc, PETSc installation, version, list, active, default: 3.7.7
-    compilers,
-    data, input file path, list, active, default: data/
-    model, bgc file path, list, active, default: model/
-    
-    .. code:: bash
-    
-        $>
-        metos3d info
-        
-    .. code:: python
-    
-        for i in range(10):
-            print(i)
-            
-    .. code:: octave
-    
-        a = zeros(10);
-        a(:) = 1.0;
-
-    Metos3D stores its configuration ?user-wide.
-
     '''
     
+    print("# info:   ", ctx.obj)
+    pass
+
+# init command
+@metos3d.command()
+@click.pass_context
+def init(ctx):
+    '''
+    Initialize Metos3D environment.
+    '''
+    
+    print("# init:   ", ctx.obj)
+    pass
+
+
+
+
+
+
+
+#
+# DUMP
+#
+
+
+#\b
+#    petsc, PETSc installation, version, list, active, default: 3.7.7
+#    compilers,
+#    data, input file path, list, active, default: data/
+#    model, bgc file path, list, active, default: model/
+#
+#    .. code:: bash
+#
+#        $>
+#        metos3d info
+#
+#    .. code:: python
+#
+#        for i in range(10):
+#            print(i)
+#
+#.. code:: octave
+#
+#    a = zeros(10);
+#    a(:) = 1.0;
+#
+#    Metos3D stores its configuration ?user-wide.
+
 #        \b
 #        Metos3D stores configuration information in ...
 #        ``.~/metos3drc``
@@ -102,19 +126,8 @@ def info(ctx):
 #
 #    print(filepath)
 #    print(os.path.exists(filepath + ".metos3drc"))
-#    print(ctx.obj)
-    pass
 
-## petsc
-#@metos3d.command()
-#@click.pass_context
-#def petsc(ctx):
-#    '''
-#        Show PETSc configuration.
-#        '''
-#    print(ctx.obj)
-#    pass
-#
+
 ## data
 #@metos3d.command()
 #@click.pass_context
@@ -135,5 +148,12 @@ def info(ctx):
 #    print(ctx.obj)
 #    pass
 
-
-
+## petsc
+#@metos3d.command()
+#@click.pass_context
+#def petsc(ctx):
+#    '''
+#    Show PETSc configuration.
+#    '''
+#    print("# petsc: ", ctx.obj)
+#    pass
