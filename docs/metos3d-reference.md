@@ -24,25 +24,6 @@ optimization as well as an Automatic Differentiation (AD) context.
 The interface changed (more or less) since it was introduced for the first time.
 The initial version can be found at \citep[][]{PiwSla16}.
 
-### What is it?
-
-Ther Metos3D BGC API is a convention how biogeochemical models can be coupled to ocean circulation.
-
-
-### What for?
-
-modelers that want to their marine ecosystem or biogeochemical models,
-coupled to a global ocean circulation,
-
-### Why?
-
-climate research, ocean simulation,
-bgc models, uncertainties, parameters, processes,
-require assessment, at global-basin scale,
-sophisticated general circulation model,
-
-### How?
-
 #### C model template
 
 #### Fortran model template

@@ -4,116 +4,72 @@
 
 ## About
 
-Metos3D is a software package ...
+### What is Metos3D?
 
-## Quick start
+Metos3D is a collection of
 
-- What I need: curl, git
-- What I get: python, metos3d, fun
+- [simulation](https://github.com/metos3d/simpack/) and [optimization](https://github.com/metos3d/optpack/) software
+- chemical / biogeochemical / marine ecosystem [models](https://github.com/metos3d/model/)
+- transport and forcing [data](https://github.com/metos3d/data/)
 
-### Install conda
+that is based on the [transport matrix approach](https://github.com/samarkhatiwala/tmm).
 
-More about: Anaconda, Miniconda and Conda
+### What is Metos3D for?
 
-Miniconda installer page: https://conda.io/miniconda.html
+Metos3D can be used for
 
-[miniconda](https://conda.io/miniconda.html)
+- simulation of
+- computation of annual periodic steady-states of
+- parameter estimates for
 
-https://conda.io/miniconda.html
+chemical / biogeochemical / marine ecosystem models coupled to global 3-D ocean circulation.
 
-Download script and run script:
+### Why was Metos3D developed?
 
-- **Linux:**
+In the field of climate research and ocean simulation, marine ecosystem models still entail the most uncertainties.
+Therefore
+
+- a application programming interface for biogeochemical models [BGC API](https://jpicau.github.io/metos3d/metos3d-reference.html) was designed and
+- a comprehensive, state-of-the-art, high-performance software was built around it.
+
+See the scientific paper for more details:
+[Metos3D: the Marine Ecosystem Toolkit for Optimization and Simulation in 3-D – Part 1: Simulation Package v0.3.2](https://www.geosci-model-dev.net/9/3729/2016/)
+
+### How do I use Metos3D?
+
+Have a look into the Metos3D
+
+ - [cheat sheet](https://jpicau.github.io/metos3d/metos3d-cheat-sheet.html).
+ - [BGC API reference](https://jpicau.github.io/metos3d/metos3d-reference.html).
+ - [tutorial](https://jpicau.github.io/metos3d/metos3d-tutorial.html).
+
+## Install
+
+Install the [Python3/Miniconda](https://conda.io/miniconda.html) distribution:
 
 ```
-curl -O ... # download script
-bash ...    # run script
+# Assume a 64-bit Linux operation system ...
+curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
-- **Mac:**
+Install Python bindings for HDF5 ([h5py](https://www.h5py.org/)) and YAML ([pyyaml](https://pyyaml.org/)):
 
 ```
-curl -O ... # download script
-bash ...    # run script
+conda install h5py
+conda install pyyaml
 ```
 
-- **Windows:**
-
-```
-???
-```
-
-### install metos3d
+Install Metos3D:
 
 ```
 conda install -c jpicau metos3d
 ```
 
-### first run
+Initialize Metos3D:
 
 ```
-$>
-python metos3d.py sim init N -v
-# initilize simulation with model N
-mkdir N ...
-cd N ...
-ls -s
-tree N
-...
+metos3d init
 ```
-
-## doc
-
-[Metos3D docs](https://jpicau.github.io/metos3d/)
-
-or
-
-https://metos3d.readthedocs.io/en/latest/
-
-## misc
-
-some advices, good pratices that we try to follow,
-- branching model, http://nvie.com/posts/a-successful-git-branching-model/
-- semantic versioning, https://semver.org/
-
-what to do to create a new version?
-- assuming, the last commit is done, (repository pushed)
-
-```
-git tag -a ... -m ...
-git push --follow-tags
-
-edit: cli.py
-    @click.version_option("0.0.1")
-edit: setup.py
-    version       = "0.0.1",
-
-python setup.py sdist
-twine upload dist/metos3d-...-0.0.1...
-
-```
-
-## Thanks
-
-### scientific
-
-tmm, samar khatiwala
-bgc, iris kriest
-
-hamocc, malte heinemann, jochen segschneider
-
-### programming
-
-joscha reimer, python, conda, etc...
-
-copied from others work,
-mkdocs, twine,
-
-sphinx,
-
-click, yaml,
-
-
-
 
 
