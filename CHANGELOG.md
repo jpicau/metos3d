@@ -1,4 +1,8 @@
 
+- [cheat sheet](https://jpicau.github.io/metos3d/metos3d-cheat-sheet.html).
+- [BGC API reference](https://jpicau.github.io/metos3d/metos3d-reference.html).
+- [tutorial](https://jpicau.github.io/metos3d/metos3d-tutorial.html).
+
 The toolkit suits the biochemocal modelling and fits into an optimization, optimal control as well as automatic differentiation context.
 
 The aim was to develop a 

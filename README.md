@@ -39,7 +39,7 @@ See the scientific paper for more details:
 
 Have a look into the Metos3D
 
- - [cheat sheet](https://jpicau.github.io/metos3d/metos3d-cheat-sheet.html).
+ - [cheat sheet](docs/metos3d-cheat-sheet.md).
  - [BGC API reference](https://jpicau.github.io/metos3d/metos3d-reference.html).
  - [tutorial](https://jpicau.github.io/metos3d/metos3d-tutorial.html).
 
