@@ -2,7 +2,7 @@
 
  Marine Ecosystem Toolkit for Optimization and Simulation in 3-D
 
-## About
+## About Metos3D
 
 ### What is Metos3D?
 
@@ -35,15 +35,15 @@ Therefore
 See the scientific paper for more details:
 [Metos3D: the Marine Ecosystem Toolkit for Optimization and Simulation in 3-D – Part 1: Simulation Package v0.3.2](https://www.geosci-model-dev.net/9/3729/2016/)
 
-### [How do I use Metos3D?](https://jpicau.github.io/metos3d/)
+### How do I use Metos3D?
 
-Have a look into the Metos3D
+Have a look into the
 
- - [cheat sheet](docs/metos3d-cheat-sheet.md).
- - [BGC API reference](docs/metos3d-reference.md).
- - [tutorial](docs/metos3d-tutorial.md).
+- [Metos3D cheat sheet](docs/metos3d-cheat-sheet.md).
+- [Metos3D BGC API reference](docs/metos3d-reference.md).
+- [Metos3D tutorial](docs/metos3d-tutorial.md).
 
-## Install
+## Install Metos3D
 
 Install the [Miniconda/Python3](https://conda.io/miniconda.html) distribution:
 
@@ -60,7 +60,7 @@ conda install h5py
 conda install pyyaml
 ```
 
-Install Metos3D:
+Install Metos3D from the `jpicau` channel:
 
 ```
 conda install -c jpicau metos3d
