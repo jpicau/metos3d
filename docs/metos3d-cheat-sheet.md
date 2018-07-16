@@ -1,4 +1,4 @@
-# metos3d cheat sheet
+# Metos3D cheat sheet
 
 
 `metos3d info`

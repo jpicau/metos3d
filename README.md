@@ -40,7 +40,7 @@ See the scientific paper for more details:
 Have a look into the
 
 - [Metos3D cheat sheet](docs/metos3d-cheat-sheet.md).
-- [Metos3D BGC API reference](docs/metos3d-reference.md).
+- [Metos3D BGC API reference](docs/metos3d-bgc-api-reference.md).
 - [Metos3D tutorial](docs/metos3d-tutorial.md).
 
 ## Install Metos3D

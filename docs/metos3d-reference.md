@@ -1,4 +1,4 @@
-# Metos3D BGC API
+# Metos3D BGC API reference
 
 Application programming interface (API) for biogeochemical (BGC) models
 
