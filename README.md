@@ -30,7 +30,7 @@ In the field of climate research and ocean simulation, marine ecosystem models s
 Therefore
 
 - a application programming interface for biogeochemical models [BGC API](https://jpicau.github.io/metos3d/metos3d-reference.html) was designed and
-- a comprehensive, state-of-the-art, high-performance software was built around it.
+- a comprehensive, state-of-the-art, high-performance software based on [PETSc](https://www.mcs.anl.gov/petsc/index.html) was built around it.
 
 See the scientific paper for more details:
 [Metos3D: the Marine Ecosystem Toolkit for Optimization and Simulation in 3-D – Part 1: Simulation Package v0.3.2](https://www.geosci-model-dev.net/9/3729/2016/)
