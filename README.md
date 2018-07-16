@@ -29,23 +29,23 @@ chemical / biogeochemical / marine ecosystem models coupled to global 3-D ocean 
 In the field of climate research and ocean simulation, marine ecosystem models still entail the most uncertainties.
 Therefore
 
-- a application programming interface for biogeochemical models [BGC API](https://jpicau.github.io/metos3d/metos3d-reference.html) was designed and
+- an application programming interface for biogeochemical models [BGC API](https://jpicau.github.io/metos3d/metos3d-reference.html) was designed and
 - a comprehensive, state-of-the-art, high-performance software based on [PETSc](https://www.mcs.anl.gov/petsc/index.html) was built around it.
 
 See the scientific paper for more details:
 [Metos3D: the Marine Ecosystem Toolkit for Optimization and Simulation in 3-D – Part 1: Simulation Package v0.3.2](https://www.geosci-model-dev.net/9/3729/2016/)
 
-### How do I use Metos3D?
+### [How do I use Metos3D?](https://jpicau.github.io/metos3d/)
 
 Have a look into the Metos3D
 
  - [cheat sheet](docs/metos3d-cheat-sheet.md).
- - [BGC API reference](https://jpicau.github.io/metos3d/metos3d-reference.html).
- - [tutorial](https://jpicau.github.io/metos3d/metos3d-tutorial.html).
+ - [BGC API reference](docs/metos3d-reference.md).
+ - [tutorial](docs/metos3d-tutorial.md).
 
 ## Install
 
-Install the [Python3/Miniconda](https://conda.io/miniconda.html) distribution:
+Install the [Miniconda/Python3](https://conda.io/miniconda.html) distribution:
 
 ```
 # Assume a 64-bit Linux operation system ...
