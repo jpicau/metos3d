@@ -20,7 +20,7 @@ import metos3d
 
 from setuptools import setup
 
-with open("README.md"), encoding='utf-8') as f:
+with open("README.md", encoding="utf-8") as f:
     long_description = f.read()
 
 setup(name                          = metos3d.__title__,
