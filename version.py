@@ -45,7 +45,7 @@ if __name__ == "__main__":
     print("Creating distribution ... " + cmd)
     os.system(cmd)
 
-    cmd = "twine upload dist/*"
+    cmd = "twine upload dist/metos3d-{0}.tar.gz".format(version)
     print("Uploading to PyPI ....... " + cmd)
     os.system(cmd)
 
