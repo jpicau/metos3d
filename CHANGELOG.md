@@ -1,3 +1,25 @@
+```
+metos3d, version
+
+1. __init__
+__version__     = "1.0.0"
+
+2. tag
+git tag -a -m '1.0.0' 1.0.0
+
+3. commit
+git ci -am '1.0.0' 
+
+4. push
+git push --follow-tags
+
+5. sdist
+python setup.py sdist
+
+6. twine
+twine upload dist/*
+```
+
 
 - [cheat sheet](https://jpicau.github.io/metos3d/metos3d-cheat-sheet.html).
 - [BGC API reference](https://jpicau.github.io/metos3d/metos3d-reference.html).

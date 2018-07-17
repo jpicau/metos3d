@@ -24,24 +24,30 @@ Metos3D can be used for
 
 chemical / biogeochemical / marine ecosystem models coupled to global 3-D ocean circulation.
 
+See: [[Piwonski and Slawig, 2016]](https://www.geosci-model-dev.net/9/3729/2016/)
+
 ### Why was Metos3D developed?
 
 In the field of climate research and ocean simulation, marine ecosystem models still entail the most uncertainties.
 Therefore
 
-- an application programming interface for biogeochemical models [BGC API](https://jpicau.github.io/metos3d/metos3d-reference.html) was designed and
+- an application programming interface for biogeochemical models [BGC API](https://github.com/jpicau/metos3d/blob/master/docs/metos3d-reference.html) was designed and
 - a comprehensive, state-of-the-art, high-performance software based on [PETSc](https://www.mcs.anl.gov/petsc/index.html) was built around it.
 
-See the scientific paper for more details:
-[Metos3D: the Marine Ecosystem Toolkit for Optimization and Simulation in 3-D – Part 1: Simulation Package v0.3.2](https://www.geosci-model-dev.net/9/3729/2016/)
+See: [[Piwonski and Slawig, 2016]](https://www.geosci-model-dev.net/9/3729/2016/)
 
 ### How do I use Metos3D?
 
 Have a look into the
 
-- [Metos3D cheat sheet](docs/metos3d-cheat-sheet.md).
-- [Metos3D BGC API reference](docs/metos3d-bgc-api-reference.md).
-- [Metos3D tutorial](docs/metos3d-tutorial.md).
+- [Metos3D cheat sheet](https://github.com/jpicau/metos3d/blob/master/docs/metos3d-cheat-sheet.md).
+- [Metos3D BGC API reference](https://github.com/jpicau/metos3d/blob/master/docs/metos3d-bgc-api-reference.md).
+- [Metos3D tutorial](https://github.com/jpicau/metos3d/blob/master/docs/metos3d-tutorial.md).
+
+## Reference
+
+[Piwonski and Slawig, 2016]  
+[Metos3D: the Marine Ecosystem Toolkit for Optimization and Simulation in 3-D – Part 1: Simulation Package v0.3.2](https://www.geosci-model-dev.net/9/3729/2016/)
 
 ## Install Metos3D
 
