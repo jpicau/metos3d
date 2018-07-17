@@ -20,18 +20,23 @@ import metos3d
 
 from setuptools import setup
 
-setup(name          = metos3d.__title__,
-      version       = metos3d.__version__,
-      description   = metos3d.__summary__,
-      url           = metos3d.__uri__,
-      author        = metos3d.__author__,
-      author_email  = metos3d.__email__,
-      license       = metos3d.__license__,
-      packages      = ["metos3d"],
-      entry_points  = {
+with open("README.md"), encoding='utf-8') as f:
+    long_description = f.read()
+
+setup(name                          = metos3d.__title__,
+      version                       = metos3d.__version__,
+      description                   = metos3d.__summary__,
+      long_description              = long_description,
+      long_description_content_type = "text/markdown",
+      url                           = metos3d.__uri__,
+      author                        = metos3d.__author__,
+      author_email                  = metos3d.__email__,
+      license                       = metos3d.__license__,
+      packages                      = ["metos3d"],
+      entry_points                  = {
         "console_scripts": ["metos3d=metos3d.cli:metos3d"],
       },
-      install_requires=["click", "pyyaml"],
-      zip_safe      = False)
+      install_requires              = ["click", "pyyaml"],
+      zip_safe                      = False)
 
 

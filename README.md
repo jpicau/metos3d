@@ -48,7 +48,7 @@ Have a look into the
 Install the [Miniconda/Python3](https://conda.io/miniconda.html) distribution:
 
 ```
-# Assume a 64-bit Linux operation system ...
+# Assume a 64-bit Linux operating system ...
 curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 ```
@@ -60,7 +60,7 @@ conda install h5py
 conda install pyyaml
 ```
 
-Install Metos3D from the `jpicau` channel:
+Install Metos3D from the `jpicau` Anaconda channel:
 
 ```
 conda install -c jpicau metos3d
