@@ -51,31 +51,49 @@ Have a look into the
 
 ## Install Metos3D
 
-Install the [Miniconda/Python3](https://conda.io/miniconda.html) distribution:
+Assuming a 64-bit Linux operating system. Install the [Miniconda/Python3](https://conda.io/miniconda.html) distribution:
 
 ```
-# Assume a 64-bit Linux operating system ...
 curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
-Install Python bindings for HDF5 ([h5py](https://www.h5py.org/)) and YAML ([pyyaml](https://pyyaml.org/)):
+Install Metos3D from [PyPI](https://pypi.org/):
 
 ```
-conda install h5py
-conda install pyyaml
+pip install metos3d
 ```
 
-Install Metos3D from the `jpicau` Anaconda channel:
+The following packages will be additionally installed with Metos3D: `click`, `pyyaml`, ... 
+
+## Work with Metos3D
 
 ```
-conda install -c jpicau metos3d
-```
-
-Initialize Metos3D:
-
-```
+mkdir metos3d
+cd metos3d/
 metos3d init
+# metos3d: <metos3d.cli.Context object at 0x7f4892ed9fd0>
+# init:    <metos3d.cli.Context object at 0x7f4892ed9fd0>
 ```
+
+
+<!--Install Python bindings for HDF5 ([h5py](https://www.h5py.org/)) and YAML ([pyyaml](https://pyyaml.org/)):-->
+<!---->
+<!--```-->
+<!--conda install h5py-->
+<!--conda install pyyaml-->
+<!--```-->
+<!---->
+<!--Install Metos3D from the `jpicau` Anaconda channel:-->
+<!---->
+<!--```-->
+<!--conda install -c jpicau metos3d-->
+<!--```-->
+<!---->
+<!--Initialize Metos3D:-->
+<!---->
+<!--```-->
+<!--metos3d init-->
+<!--```-->
 
 

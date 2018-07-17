@@ -52,6 +52,7 @@ def metos3d(ctx, verbose):
     ctx.obj = Context()
     ctx.obj.verbose = verbose
     print("# metos3d:", ctx.obj)
+    print("# verbose:", ctx.obj.verbose)
 
 # info command
 @metos3d.command()
@@ -62,7 +63,10 @@ def info(ctx):
     '''
     
     print("# info:   ", ctx.obj)
+    print("# verbose:", ctx.obj.verbose)
     pass
+
+    os.path.expanduser("~/.metos3d")
 
 # init command
 @metos3d.command()
@@ -73,6 +77,7 @@ def init(ctx):
     '''
     
     print("# init:   ", ctx.obj)
+    print("# verbose:", ctx.obj.verbose)
     pass
 
 
