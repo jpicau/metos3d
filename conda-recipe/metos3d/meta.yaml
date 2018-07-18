@@ -1,0 +1,62 @@
+{% set name = "metos3d" %}
+{% set version = "1.0.3" %}
+{% set file_ext = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash_value = "4256f5c16d0f08f29967e58b94becee226a83477220acc4edf74f4716f748089" %}
+
+package:
+  name: '{{ name|lower }}'
+  version: '{{ version }}'
+
+source:
+  fn: '{{ name }}-{{ version }}.{{ file_ext }}'
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
+  '{{ hash_type }}': '{{ hash_value }}'
+
+build:
+  number: 0
+  entry_points:
+    - metos3d=metos3d.cli:metos3d
+  script: python setup.py install --single-version-externally-managed --record=record.txt
+
+requirements:
+  host:
+    - python
+    - setuptools
+    - click
+    - pyyaml
+  run:
+    - python
+    - click
+    - pyyaml
+
+test:
+  imports:
+    - metos3d
+  commands:
+    - metos3d --help
+
+about:
+  home: https://github.com/metos3d
+  license: GPL-3.0
+  license_family: GPL3
+  license_file: ''
+  summary: Marine Ecosystem Toolkit for Optimization and Simulation in 3-D
+  description: "# Metos3D\n\n Marine Ecosystem Toolkit for Optimization and Simulation in 3-D\n\n## About Metos3D\n\n### What is Metos3D?\n\nMetos3D is a collection of\n\n- [simulation](https://github.com/metos3d/simpack/)\
+    \ and [optimization](https://github.com/metos3d/optpack/) software\n- chemical / biogeochemical / marine ecosystem [models](https://github.com/metos3d/model/)\n- transport and forcing [data](https://github.com/metos3d/data/)\n\
+    \nthat is based on the [transport matrix approach](https://github.com/samarkhatiwala/tmm).\n\n### What is Metos3D for?\n\nMetos3D can be used for\n\n- simulation of\n- computation of annual periodic\
+    \ steady-states of\n- parameter estimates for\n\nchemical / biogeochemical / marine ecosystem models coupled to global 3-D ocean circulation.\n\nSee: [[Piwonski and Slawig, 2016]](https://www.geosci-model-dev.net/9/3729/2016/)\n\
+    \n### Why was Metos3D developed?\n\nIn the field of climate research and ocean simulation, marine ecosystem models still entail the most uncertainties.\nTherefore\n\n- an application programming interface\
+    \ for biogeochemical models [BGC API](https://github.com/jpicau/metos3d/blob/master/docs/metos3d-reference.html) was designed and\n- a comprehensive, state-of-the-art, high-performance software based\
+    \ on [PETSc](https://www.mcs.anl.gov/petsc/index.html) was built around it.\n\nSee: [[Piwonski and Slawig, 2016]](https://www.geosci-model-dev.net/9/3729/2016/)\n\n### How do I use Metos3D?\n\nHave\
+    \ a look into the\n\n- [Metos3D cheat sheet](https://github.com/jpicau/metos3d/blob/master/docs/metos3d-cheat-sheet.md).\n- [Metos3D BGC API reference](https://github.com/jpicau/metos3d/blob/master/docs/metos3d-bgc-api-reference.md).\n\
+      - [Metos3D tutorial](https://github.com/jpicau/metos3d/blob/master/docs/metos3d-tutorial.md).\n\n## Reference\n\n[Piwonski and Slawig, 2016]  \n[Metos3D: the Marine Ecosystem Toolkit for Optimization\
+    \ and Simulation in 3-D \u2013 Part 1: Simulation Package v0.3.2](https://www.geosci-model-dev.net/9/3729/2016/)\n\n## Install Metos3D\n\nInstall the [Miniconda/Python3](https://conda.io/miniconda.html)\
+    \ distribution:\n\n```\n# Assume a 64-bit Linux operating system ...\ncurl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh\nbash Miniconda3-latest-Linux-x86_64.sh\n```\n\nInstall\
+    \ Python bindings for HDF5 ([h5py](https://www.h5py.org/)) and YAML ([pyyaml](https://pyyaml.org/)):\n\n```\nconda install h5py\nconda install pyyaml\n```\n\nInstall Metos3D from the `jpicau` Anaconda\
+    \ channel:\n\n```\nconda install -c jpicau metos3d\n```\n\nInitialize Metos3D:\n\n```\nmetos3d init\n```"
+  doc_url: ''
+  dev_url: ''
+
+extra:
+  recipe-maintainers: ''

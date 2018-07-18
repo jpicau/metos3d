@@ -12,7 +12,7 @@ Metos3D is a collection of
 - chemical / biogeochemical / marine ecosystem [models](https://github.com/metos3d/model/)
 - transport and forcing [data](https://github.com/metos3d/data/)
 
-that is based on the [transport matrix approach](https://github.com/samarkhatiwala/tmm).
+that is based on the [Transport Matrix Method](https://github.com/samarkhatiwala/tmm).
 
 ### What is Metos3D for?
 
@@ -46,7 +46,7 @@ Have a look into the [Metso3D docs](https://github.com/jpicau/metos3d/blob/maste
 
 ## Reference
 
-[Piwonski and Slawig, 2016]  
+[Piwonski and Slawig, 2016]<br>
 [Metos3D: the Marine Ecosystem Toolkit for Optimization and Simulation in 3-D – Part 1: Simulation Package v0.3.2](https://www.geosci-model-dev.net/9/3729/2016/)
 
 ## Install Metos3D
@@ -75,11 +75,13 @@ conda install -c jpicau metos3d
 
 ## Thanks
 
-tmm, samar khatiwala
-bgc, iris kriest
-<!--hamocc, malte heinemann, jochen segschneider-->
+The authors would like to thank:
 
-joscha reimer, python, conda, etc...
+- [Samar Khatiwala](https://www.earth.ox.ac.uk/people/samar-khatiwala/) for the [Transport Matrix Method](https://github.com/samarkhatiwala/tmm).
+- [Iris Kriest](https://www.geomar.de/en/mitarbeiter/fb2/bm/ikriest/) for the support for biogeochemistry.
+- [Joscha Reimer](https://www.algopt.informatik.uni-kiel.de/en/team/m.sc.-joscha-reimer) for the support for Python and Anaconda. 
+
+<!--hamocc, malte heinemann, jochen segschneider-->
 
 
 
