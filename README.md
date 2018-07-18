@@ -38,7 +38,7 @@ See: [[Piwonski and Slawig, 2016]](https://www.geosci-model-dev.net/9/3729/2016/
 
 ### How do I use Metos3D?
 
-Have a look into the
+Have a look into the [Metso3D docs](https://github.com/jpicau/metos3d/blob/master/docs), specifically the
 
 - [Metos3D cheat sheet](https://github.com/jpicau/metos3d/blob/master/docs/metos3d-cheat-sheet.md).
 - [Metos3D BGC API reference](https://github.com/jpicau/metos3d/blob/master/docs/metos3d-bgc-api-reference.md).
@@ -60,49 +60,26 @@ curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
-*MacOSX:*
+*macOS:*
 
 ```
 curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 bash Miniconda3-latest-MacOSX-x86_64.sh
 ```
 
-Install Metos3D from [PyPI](https://pypi.org/):
+Install Metos3D using `conda`:
 
 ```
-pip install metos3d
+conda install -c jpicau metos3d
 ```
 
-The following packages will be additionally installed with Metos3D: `click`, `pyyaml`, ... 
+## Thanks
 
-## Work with Metos3D
+tmm, samar khatiwala
+bgc, iris kriest
+<!--hamocc, malte heinemann, jochen segschneider-->
 
-```
-mkdir metos3d
-cd metos3d/
-metos3d init
-# metos3d: <metos3d.cli.Context object at 0x7f4892ed9fd0>
-# init:    <metos3d.cli.Context object at 0x7f4892ed9fd0>
-```
+joscha reimer, python, conda, etc...
 
-
-<!--Install Python bindings for HDF5 ([h5py](https://www.h5py.org/)) and YAML ([pyyaml](https://pyyaml.org/)):-->
-<!---->
-<!--```-->
-<!--conda install h5py-->
-<!--conda install pyyaml-->
-<!--```-->
-<!---->
-<!--Install Metos3D from the `jpicau` Anaconda channel:-->
-<!---->
-<!--```-->
-<!--conda install -c jpicau metos3d-->
-<!--```-->
-<!---->
-<!--Initialize Metos3D:-->
-<!---->
-<!--```-->
-<!--metos3d init-->
-<!--```-->
 
 
