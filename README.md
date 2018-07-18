@@ -51,16 +51,25 @@ Have a look into the
 
 ## Install Metos3D
 
-Assuming a 64-bit Linux operating system. Install the [Miniconda/Python3](https://conda.io/miniconda.html) distribution:
+Install the [Miniconda/Python3](https://conda.io/miniconda.html) distribution.
 
-```
+**Linux:**
+
+```sh
 curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
+**MacOSX:**
+
+```sh
+curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+bash Miniconda3-latest-MacOSX-x86_64.sh
+```
+
 Install Metos3D from [PyPI](https://pypi.org/):
 
-```
+```sh
 pip install metos3d
 ```
 
@@ -68,7 +77,7 @@ The following packages will be additionally installed with Metos3D: `click`, `py
 
 ## Work with Metos3D
 
-```
+```sh
 mkdir metos3d
 cd metos3d/
 metos3d init

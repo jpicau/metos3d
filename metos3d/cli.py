@@ -66,7 +66,9 @@ def info(ctx):
     print("# verbose:", ctx.obj.verbose)
     pass
 
-    os.path.expanduser("~/.metos3d")
+    config_file_path = os.path.expanduser("~/.metos3d")
+    cmd = "cat " + config_file_path
+    os.system(cmd)
 
 # init command
 @metos3d.command()
