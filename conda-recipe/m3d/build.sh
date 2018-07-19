@@ -1,10 +1,11 @@
 #!/bin/bash
 
-set -eu
+set -veu
 
 echo '*** m3d, shell, begin ********************************************************************'
 
 echo $CC
+echo $CXX
 echo $FC
 
 echo '*** m3d, shell, compile, CC'
@@ -27,6 +28,7 @@ $PYTHON m3d.py
 
 echo '*** m3d, shell, copy'
 cp m3d.exe $PREFIX/bin/.
+cp m3d.py $PREFIX/bin/.
 
 echo '*** m3d, shell, end ********************************************************************'
 

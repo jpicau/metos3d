@@ -9,6 +9,7 @@ print("CC:", CC)
 print("FC:", FC)
 
 os.system("./m3d.exe")
+os.system("which -a mpicc")
 
 print("*** m3d, python, end ********************************************************************")
 
