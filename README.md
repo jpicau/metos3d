@@ -8,7 +8,8 @@
 
 Metos3D is a collection of
 
-- [simulation](https://github.com/metos3d/simpack/) and [optimization](https://github.com/metos3d/optpack/) software
+- simulation software ([simpack](https://github.com/metos3d/simpack/))
+- optimization software ([optpack](https://github.com/metos3d/optpack/))
 - chemical / biogeochemical / marine ecosystem [models](https://github.com/metos3d/model/)
 - transport and forcing [data](https://github.com/metos3d/data/)
 
@@ -51,20 +52,15 @@ Have a look into the [Metso3D docs](https://github.com/jpicau/metos3d/blob/maste
 
 ## Install Metos3D
 
-Install the [Miniconda/Python3](https://conda.io/miniconda.html) distribution.
+### Easy install
 
-*Linux:*
+> **Note:** For the time being, we only support Linux-x86_64 platforms as easy install.
+
+Install the [Miniconda/Python3](https://conda.io/miniconda.html) distribution if haven't done already:
 
 ```
 curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
-```
-
-*macOS:*
-
-```
-curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
-bash Miniconda3-latest-MacOSX-x86_64.sh
 ```
 
 Install Metos3D using `conda`:
@@ -72,6 +68,10 @@ Install Metos3D using `conda`:
 ```
 conda install -c jpicau metos3d
 ```
+
+### Custom install
+
+Refer to [Metso3D custom install](https://github.com/jpicau/metos3d/blob/master/docs/metos3d-custom-install.md) for a detailed discussion.
 
 ## Thanks
 

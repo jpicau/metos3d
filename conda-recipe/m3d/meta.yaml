@@ -11,18 +11,22 @@ requirements:
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
         - {{ compiler('fortran') }}
-        - mpi 1.0 openmpi
+        - mpi
+        - openmpi
         - python
     host:
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
         - {{ compiler('fortran') }}
-        - mpi 1.0 openmpi
+        - mpi
+        - openmpi
         - python
     run:
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
         - {{ compiler('fortran') }}
-        - mpi 1.0 openmpi
+        - mpi
+        - openmpi
         - python
+
 
