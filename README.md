@@ -52,9 +52,9 @@ Have a look into the [Metso3D docs](https://github.com/jpicau/metos3d/blob/maste
 
 ## Install Metos3D
 
-### Easy install
-
 > **Note:** For the time being, we only support Linux-x86_64 platforms as easy install.
+
+### Easy install
 
 Install the [Miniconda/Python3](https://conda.io/miniconda.html) distribution if haven't done already:
 
@@ -63,7 +63,7 @@ curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
-Install Metos3D using `conda`:
+Install Metos3D using the `conda` command:
 
 ```
 conda install -c jpicau metos3d
